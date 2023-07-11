@@ -1,0 +1,10 @@
+import java.sql.SQLException;
+
+public class MeshJoin {
+	private static Integer num_transactions= 10;
+	public static void main(String[] args)throws SQLException {
+		DBConnection d1 = DBConnection.getInstance();
+		//System.out.println("Heyyyyyy");
+	}
+
+}

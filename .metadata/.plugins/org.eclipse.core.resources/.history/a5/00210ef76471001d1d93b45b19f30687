@@ -1,0 +1,32 @@
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+public class MeshJoin {
+	private static Integer num_transactions= 50;
+	private static Integer num_partitions = 10;
+	public static ArrayList<ArrayList<String>> Queue = new ArrayList<>(num_partitions);
+	public static Integer num_rows_prod;
+	public static Integer num_rows_customer;
+	public static Map<String, ArrayList<TransactionFact>> HashMap = new HashMap<String, ArrayList<TransactionFact>>();
+	
+	public static Integer countProdRows(Connection con) throws SQLException{
+        String sql = "Select count(*) from masterdata;";
+        PreparedStatement p_obj = con.prepareStatement(sql);
+        ResultSet rs = p_obj.executeQuery();
+        Integer num_Rows_Prod = 0;
+        while(rs.next()){
+            num_Rows_Prod = rs.getInt(1);
+        }
+        return num_Rows_Prod;
+    }
+	
+	public static void main(String[] args)throws SQLException {
+		DBConnection d1 = DBConnection.getInstance();
+	}
+
+}

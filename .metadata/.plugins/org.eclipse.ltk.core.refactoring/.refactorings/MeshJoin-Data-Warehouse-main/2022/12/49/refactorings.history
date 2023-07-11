@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;transactionData&apos; to &apos;Transactionfact&apos;&#x0D;&#x0A;- Original project: &apos;MeshJoin-Data-Warehouse-main&apos;&#x0D;&#x0A;- Original element: &apos;transactionData&apos;&#x0D;&#x0A;- Renamed element: &apos;Transactionfact&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;transactionData&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/meshJoin\/src&lt;{transactionData.java[transactionData" matchStrategy="1" name="Transactionfact" qualified="false" references="true" similarDeclarations="false" stamp="1669895210833" textual="false" version="1.0"/>
+</session>

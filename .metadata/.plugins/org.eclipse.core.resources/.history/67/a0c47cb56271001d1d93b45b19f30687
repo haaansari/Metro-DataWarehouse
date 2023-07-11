@@ -1,0 +1,13 @@
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+public class MeshJoin {
+	private static Integer num_transactions= 50;
+	private static Integer num_partitions = 10;
+	public static ArrayList<ArrayList<String>> S = new ArrayList<>(numOfPartitions);
+	public static void main(String[] args)throws SQLException {
+		DBConnection d1 = DBConnection.getInstance();
+		//System.out.println("Heyyyyyy");
+	}
+
+}

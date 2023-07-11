@@ -1,0 +1,17 @@
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+public class MeshJoin {
+	private static Integer num_transactions= 50;
+	private static Integer num_partitions = 10;
+	public static ArrayList<ArrayList<String>> Queue = new ArrayList<>(num_partitions);
+	public static Map<String, ArrayList<TransactionFact>> multiValueMap = new HashMap<String, ArrayList<transactionData>>();
+	public static Integer num_rows_prod;
+	public static Integer num_rows_customer;
+	public static void main(String[] args)throws SQLException {
+		DBConnection d1 = DBConnection.getInstance();
+	}
+
+}
